@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -214,7 +215,7 @@
         <section id="theme-settings">
     <h4>Select Theme</h4>
     <select id="theme-selector">
-        <option value="null" selected>Default Theme</option>
+        <option value="null" selected>Neon Night</option>
         <option value="Mocha">Mocha Theme</option>
         <option value="OceanBreeze">Ocean Breeze Theme</option>
         <option value="NeonNight">Neon Night Theme</option>
@@ -229,7 +230,7 @@
 </section>
 
 <script>
-    if (localStorage.getItem("premium") != "1"){
+    if (localStorage.getItem("premium") != "0"){
         document.getElementById("premium-theme").style.display="none"
     }
     const themes = {
@@ -469,9 +470,8 @@
 
         <section id="search-engine-settings">
             <h4>Theme</h4>
-            <select id="engine">
-                <option value="DuckDuckGo" selected>DuckDuckGo (default)</option>
-                <option value="Google">Google</option>
+            <select id="engine"
+                <option value="Ecosia">Ecosia</option>
                 <option value="Bing">Bing</option>
                 <option value="Yahoo">Yahoo</option>
             </select>
@@ -537,3 +537,4 @@
     </body>
     <script src="scripts/js/global.js"></script>
 </html>
+
