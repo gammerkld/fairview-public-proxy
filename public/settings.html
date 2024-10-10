@@ -181,10 +181,8 @@
     <br>
     <div class="container">
         <h1>Settings</h1>
-        <button onclick="localStorage.clear();">Reset all settings</button>
-        <button onclick="save()">Save your data</button>
-        <button onclick="load()">Load your data</button>
-
+                    <button onclick="localStorage.clear();">Reset all settings</button>
+        
         <hr>
 
         <div class="setting-group">
@@ -217,7 +215,7 @@
         <option value="null" selected>Default Theme</option>
         <option value="Mocha">Mocha Theme</option>
         <option value="OceanBreeze">Ocean Breeze Theme</option>
-        <option value="NeonNight">Neon Night Theme</option>
+        <option value="NeonNight">Neon Night Theme(default)</option>
         <option value="VintageRose">Vintage Rose Theme</option>
         <option value="ForestGreen">Forest Green Theme</option>
         <option value="SandyBeach">Sandy Beach Theme</option>
@@ -470,10 +468,11 @@
         <section id="search-engine-settings">
             <h4>Theme</h4>
             <select id="engine">
-                <option value="DuckDuckGo" selected>DuckDuckGo (default)</option>
+                <option value="Ecosia" selected>Ecosia (default)</option>
                 <option value="Google">Google</option>
                 <option value="Bing">Bing</option>
                 <option value="Yahoo">Yahoo</option>
+                <option value="DuckDuckGo">DuckDuckGo</option>
             </select>
         </section>
 
