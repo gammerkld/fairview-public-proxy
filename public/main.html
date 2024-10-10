@@ -211,7 +211,7 @@
                 <div class="tos-content" style="color: black; text-align: left; padding: 20px; background-color: #fff; border-radius: 10px; width: 70%;">
                     <h2>Welcome!</h2>
                     <p>
-                        Welcome to Glitch! The proxy that knows <b>NOTHING</b> about you. 
+                        Welcome to Fairview Proxy (Glitch)! The proxy that knows <b>NOTHING</b> about you. 
                     </p>
                         <button class="close-tos-btn" style="background-color: #131313; color: white; padding: 10px; border: none; border-radius: 5px;">Continue</button>
                     </p>
@@ -231,8 +231,7 @@
               </div>
             <br>
             <button id="cloak" class="main_button">Cloak</button>
-            <button class="main_button" onclick="window.location='https://discord.gg/mWGtwnyjgK'">Join the Discord</button>   
-            <button class="main_button" onclick="window.location='contributers.html'">Contributers</button>   
+            <button class="main_button" onclick="window.location='https://discord.gg/rxaG2bn5UJ'">Join the 6G Falcon's Discord</button>   
             <button class="main_button" onclick="load_dex()">Dextensify</button>   
             <br>
             <br>
@@ -374,7 +373,7 @@ let webLink;
 
 
     let search_engine_preference = localStorage.getItem("search_engine");
-    let search_engine = "https://www.google.com/search?q="; // Default search engine
+    let search_engine = "https://www.ecosia.org"; // Default search engine
     const proxy_bridge = localStorage.getItem("proxy");
     const premium_status = localStorage.getItem("premium") === "true";
 
@@ -410,8 +409,8 @@ let webLink;
           search_engine = premium_status ? "https://scholar.google.com/scholar?q=" : "https://www.google.com/search?q=";
           break;
         default:
-          search_engine = "https://www.google.com/search?q=";
-          search_engine_preference = "Google"
+          search_engine = "https://www.ecosia.org";
+          search_engine_preference = "Ecosia"
           break;
       }
 
