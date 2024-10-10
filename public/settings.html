@@ -491,25 +491,6 @@
 
 
         <hr>
-
-     
-                <textarea id="editor"></textarea>
-                <br>
-
-                <button onclick="localStorage.setItem('custom_css', document.getElementById('editor').value); location.reload()">Apply CSS</button>
-                <button onclick="localStorage.setItem('custom_css', null)">Reset CSS</button>
-
-                <br>
-                <h5> Password Protect </h5>
-                <input placeholder="Input a password to password protect this instance!" id="password">
-                <button onclick="localStorage.setItem('password',document.getElementById(`password`).value)">Apply password</button>
-                
-                <button onclick="localStorage.setItem('password', null)">Remove password</button>
-
-                <script>
-                    fetch("scripts/css/global.css")
-                        .then(response => response.text())
-                        .then(css => document.getElementById("editor").value = css);
                 </script>
                 </center>
             </div>
