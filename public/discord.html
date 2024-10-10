@@ -22,17 +22,13 @@
       justify-content: center; /* center the iframe horizontally */
     }
     iframe {
-      width: 90%;
-      border-radius: 15px;
-      height: 95%;
-      margin-bottom: 2%;
-      margin-top: 2px;
-      border: none;
-    }
-  </style>
-</head>
-<body>    
- 
+      <widgetbot
+      server="1272617883062501550"
+      channel="1272617883532267563"
+
+    ></widgetbot>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+      
   <div id="toolbar">
     <style>
         .material-symbols-outlined {
@@ -104,7 +100,7 @@ updateTime();
     </script>
 </div>
 <div id="content">
-    <iframe src="/search/hvtrs8%2F-e%2Cwkdeevbmt%2Cim%2Fahcnlens-100282371%3A822773314-10013%3B7553800192437" frameborder="0" scrolling="no" overflow="hidden"></iframe>
+    <iframe src="" frameborder="0" scrolling="no" overflow="hidden"></iframe>
 
     <button style="position: fixed; bottom: 25px; right: 20px; width: 250px; height: 25px; padding: 25px; border-radius: 15px; background-color: rgb(51, 51, 51); border: none; color: white; font-size: 15px; line-height: 0%; cursor: pointer;" id="launch">Launch Widgetbot seperate</button>
 
@@ -124,7 +120,7 @@ updateTime();
 
     let preset = localStorage.getItem("autohide_preset") || "Google Classroom";
 
-    let x = "/search/hvtrs8%2F-e%2Cwkdeevbmt%2Cim%2Fahcnlens-100282371%3A822773314-10013%3B7553800192437";
+    let x = "";
     newWindow = window.open("about:blank");
   newWindow.document.write('<iframe src="'+ x +'" style="position: fixed; inset: 0; outline: none; border: none; height: 100%; width: 100%;"></iframe>');
 
