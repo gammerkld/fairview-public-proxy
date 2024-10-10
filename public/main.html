@@ -372,7 +372,7 @@ let webLink;
     let search_engine_preference = localStorage.getItem("search_engine");
     let search_engine = "https://www.google.com/search?q="; // Default search engine
     const proxy_bridge = localStorage.getItem("proxy");
-    const premium_status = localStorage.getItem("premium") === "true";
+    const premium_status = localStorage.getItem("premium") === "false";
 
 
     // Set search engine based on preference
@@ -391,19 +391,19 @@ let webLink;
           search_engine = "https://search.yahoo.com/search?p=";
           break;
         case "Torry":
-          search_engine = premium_status ? "https://www.torry.io/search/?type=oniontab&searchby_type=1&page=1&q=" : "https://www.google.com/search?q=";
+          search_engine = "https://www.torry.io/search/?type=oniontab&searchby_type=1&page=1&q=" : "https://www.google.com/search?q=";
           break;
         case "Startpage":
-          search_engine = premium_status ? "https://www.startpage.com/do/search?query=" : "https://www.google.com/search?q=";
+          search_engine = "https://www.startpage.com/do/search?query=" : "https://www.google.com/search?q=";
           break;
         case "Qwant":
-          search_engine = premium_status ? "https://www.qwant.com/?t=web&q=" : "https://www.google.com/search?q=";
+          search_engine = "https://www.qwant.com/?t=web&q=" : "https://www.google.com/search?q=";
           break;
         case "Brave":
-          search_engine = premium_status ? "https://search.brave.com/search?q=" : "https://www.google.com/search?q=";
+          search_engine = "https://search.brave.com/search?q=" : "https://www.google.com/search?q=";
           break;
         case "Google Scholar":
-          search_engine = premium_status ? "https://scholar.google.com/scholar?q=" : "https://www.google.com/search?q=";
+          search_engine = "https://scholar.google.com/scholar?q=" : "https://www.google.com/search?q=";
           break;
         default:
           search_engine = "https://www.google.com/search?q=";
