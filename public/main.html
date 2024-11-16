@@ -378,14 +378,25 @@ let linkTag = searchInput.querySelector("a");
 let webLink;
 
 
-  let search_engine_preference = localStorage.getItem("search_engine");
+    let search_engine_preference = localStorage.getItem("search_engine");
     let search_engine = "https://www.google.com/search?q="; // Default search engine
     const proxy_bridge = localStorage.getItem("proxy");
     const premium_status = localStorage.getItem("premium") === "true";
 
 
     // Set search engine based on preference
-@@ -391,19 +391,19 @@ <h2>Welcome!</h2>
+    if (search_engine_preference) {
+      switch (search_engine_preference) {
+        case "Google":
+          search_engine = "https://www.google.com/search?q=";
+          break;
+        case "DuckDuckGo":
+          search_engine = "https://duckduckgo.com/?q=";
+          break;
+        case "Bing":
+          search_engine = "https://www.bing.com/search?q=";
+          break;
+        case "Yahoo":
           search_engine = "https://search.yahoo.com/search?p=";
           break;
         case "Torry":
@@ -405,6 +416,8 @@ let webLink;
           break;
         default:
           search_engine = "https://www.google.com/search?q=";
+          search_engine_preference = "Google"
+          break;
       }
 
     }
