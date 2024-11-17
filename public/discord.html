@@ -1,39 +1,9 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>Glitch - Browser</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="stylesheet" type="text/css" href="scripts/css/global.css">
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    #app {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-    #content {
-      flex: 1;
-      display: flex;
-      justify-content: center; /* center the iframe horizontally */
-    }
-    iframe {
-      width: 90%;
-      border-radius: 15px;
-      height: 95%;
-      margin-bottom: 2%;
-      margin-top: 2px;
-      border: none;
-    }
-  </style>
-</head>
-<body>    
- 
-  <div id="toolbar">
     <style>
         .material-symbols-outlined {
             transition: background-color 0.3s, transform 0.3s;
@@ -44,8 +14,6 @@
   transform: scale(1.15); /* Subtle scaling effect */
   box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Deeper shadow on hover */
 }
-
-
     </style>
     <img src="assets/images/logo_trans.png" id="glitch-logo" alt="Glitch">
     <div id="nav-links">
@@ -102,33 +70,4 @@ timeElement.textContent = timeStr;
 setInterval(updateTime, 5000);
 updateTime(); 
     </script>
-</div>
-<div id="content">
  <center><iframe src=\"https://e.widgetbot.io/channels/1307500412911489044/1307500413347430501" allow="clipboard-write; fullscreen""${x}" frameborder="0" style="position: fixed; inset: 0; outline: none; border: none; height: 100%; width: 100%;"></iframe></center> 
-    <script>
-          document.getElementById("launch").addEventListener("click",function(){
-            function load() {
-    const presets = {
-        "Google Slides": "/assets/favicons/slides_favicon.png",
-        "Google": "/assets/favicons/google_favicon.png",
-        "I-Ready": "/assets/favicons/iready_favicon.png",
-        "Clever": "/assets/favicons/clever_favicon.png",
-        "FBI": "https://www.fbi.gov/++theme++fbigov.theme/images/fbi_seal_new.png",
-        "Google Classroom": "/assets/favicons/classroom_favicon.png",
-        "Github": "/assets/favicons/github_favicon.jpg",
-        "Wikipedia": "/assets/favicons/wiki_favicon.png"
-    };
-
-    let preset = localStorage.getItem("autohide_preset") || "Google Classroom";
-
-    let x = "/search/hvtrs8%2F-e%2Cwkdeevbmt%2Cim%2Fahcnlens-1307500412911489044-1307500413347430501";
-    newWindow = window.open("about:blank");
-    window.location = "https://google.com"
-}
-            load()
-          })
-    </script>
-  </div>
-  <script src="scripts/js/global.js"></script>
-</body>
-</html>
